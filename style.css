@@ -1,3 +1,225 @@
-
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro Regular"), local("GothamPro-Regular"), url("./fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamPro.woff") format("woff"), url("./fonts/GothamPro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro Bold"), local("GothamPro-Bold"), url("./fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamPro-Bold.woff") format("woff"), url("./fonts/GothamPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro Black"), local("GothamPro-Black"), url("./fonts/GothamPro-Black.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamPro-Black.woff") format("woff"), url("./fonts/GothamPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: local("ProximaNova Regular"), url("./fonts/ProximaNova-Regular.woff") format("woff"), url("./fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: local("ProximaNova Bold"), url("./fonts/ProximaNova-Bold.woff") format("woff"), url("./fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: local("ProximaNova Extrabld"), url("./fonts/ProximaNova-Extrabld.woff") format("woff"), url("./fonts/ProximaNova-Extrabld.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: local("ProximaNova Semibold"), url("./fonts/ProximaNova-Semibold.woff") format("woff"), url("./fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Regular"), url("./fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Roboto-Regular.woff") format("woff"), url("./fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Bold"), url("./fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/Roboto-Bold.woff") format("woff"), url("./fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Light"), url("./fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/Roboto-Light.woff") format("woff"), url("./fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'SF Compact Display';
+  src: local("SF Compact Display Semibold"), url("./fonts/SF-Pro-Display-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'SF Pro Text';
+  src: local("SF Pro Text Semibold"), url("./fonts/SFCompactDisplay-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+.rentuacar__portfolio_wrapper {
+  font: 400 18px/27px "Proxima Nova", sans-serif;
+  background-color: #1E1F24;
+  color: #EAEAED;
+  overflow-x: hidden; }
+  .rentuacar__portfolio_wrapper img {
+    object-fit: contain; }
+  .rentuacar__portfolio_wrapper .rent__text p {
+    margin-bottom: 30px; }
+  .rentuacar__portfolio_wrapper .rent__text ul {
+    list-style-image: url("./img/marker.svg");
+    margin-bottom: 30px;
+    padding-left: 23px; }
+    .rentuacar__portfolio_wrapper .rent__text ul:last-child {
+      margin-bottom: 0; }
+    .rentuacar__portfolio_wrapper .rent__text ul li {
+      margin-bottom: 20px; }
+      .rentuacar__portfolio_wrapper .rent__text ul li:last-child {
+        margin-bottom: 0; }
+  .rentuacar__portfolio_wrapper .section__header {
+    font: 800 48px/64px 'Proxima Nova', sans-serif;
+    letter-spacing: 0.0rem;
+    margin-bottom: 30px;
+    color: #F6F6F6;
+    text-transform: uppercase; }
+    .rentuacar__portfolio_wrapper .section__header span {
+      color: #5C6DE2; }
+  .rentuacar__portfolio_wrapper .container {
+    width: 100%;
+    max-width: 1430px;
+    padding: 0 15px;
+    margin: 0 auto; }
+  .rentuacar__portfolio_wrapper .row__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .rentuacar__portfolio_wrapper .rent__head_block {
+    background: url("./img/head_backgr.svg") no-repeat 0/cover;
+    margin-bottom: 70px;
+    position: relative; }
+    .rentuacar__portfolio_wrapper .rent__head_block .ellipse {
+      position: absolute;
+      top: 98px;
+      left: 40%; }
+    .rentuacar__portfolio_wrapper .rent__head_block .union {
+      position: absolute;
+      bottom: 0;
+      right: 7%; }
+    .rentuacar__portfolio_wrapper .rent__head_block .head__top {
+      padding: 60px 0; }
+      .rentuacar__portfolio_wrapper .rent__head_block .head__top .container {
+        display: flex;
+        justify-content: space-between; }
+        .rentuacar__portfolio_wrapper .rent__head_block .head__top .container .txt {
+          color: #EAEAED;
+          text-transform: uppercase; }
+    .rentuacar__portfolio_wrapper .rent__head_block .head__content .container {
+      max-width: initial; }
+    .rentuacar__portfolio_wrapper .rent__head_block .head__content .img__part {
+      min-width: 50vw;
+      flex-basis: 50vw;
+      display: flex;
+      justify-content: flex-end; }
+    .rentuacar__portfolio_wrapper .rent__head_block .head__content .title__part {
+      min-width: 50%;
+      flex-basis: 50%;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      .rentuacar__portfolio_wrapper .rent__head_block .head__content .title__part .rent__header {
+        max-width: 610px;
+        font: 800 72px/90px 'Proxima Nova', sans-serif;
+        color: #F6F6F6;
+        text-transform: uppercase;
+        letter-spacing: 0.02rem;
+        margin-bottom: 40px; }
+        .rentuacar__portfolio_wrapper .rent__head_block .head__content .title__part .rent__header span {
+          color: #5C6DE2; }
+      .rentuacar__portfolio_wrapper .rent__head_block .head__content .title__part .rent__head_text {
+        max-width: 610px;
+        color: #EAEAED; }
+  .rentuacar__portfolio_wrapper .rent__about_proj {
+    position: relative;
+    margin-bottom: 160px; }
+    .rentuacar__portfolio_wrapper .rent__about_proj .ellipse {
+      position: absolute;
+      top: 0;
+      left: 37%; }
+    .rentuacar__portfolio_wrapper .rent__about_proj .container {
+      max-width: initial; }
+    .rentuacar__portfolio_wrapper .rent__about_proj .img__part {
+      min-width: 52vw;
+      flex-basis: 52vw;
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+      z-index: 1; }
+      .rentuacar__portfolio_wrapper .rent__about_proj .img__part .about_el {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-35%, -35%);
+        z-index: -1; }
+      .rentuacar__portfolio_wrapper .rent__about_proj .img__part img {
+        z-index: 1;
+        width: 100%;
+        object-fit: contain; }
+    .rentuacar__portfolio_wrapper .rent__about_proj .title__wrapper {
+      min-width: 48%;
+      flex-basis: 48%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end; }
+    .rentuacar__portfolio_wrapper .rent__about_proj .title__part .section__header {
+      max-width: 575px; }
+    .rentuacar__portfolio_wrapper .rent__about_proj .title__part .rent__text {
+      max-width: 575px; }
+  .rentuacar__portfolio_wrapper .rent__tasks {
+    margin-bottom: 200px; }
+    .rentuacar__portfolio_wrapper .rent__tasks .container {
+      max-width: initial; }
+    .rentuacar__portfolio_wrapper .rent__tasks .img__part {
+      min-width: 50vw;
+      flex-basis: 50vw;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      z-index: 1;
+      padding-right: 60px; }
+      .rentuacar__portfolio_wrapper .rent__tasks .img__part .about_el {
+        position: absolute;
+        left: -60px;
+        top: -180px;
+        z-index: -1; }
+      .rentuacar__portfolio_wrapper .rent__tasks .img__part img {
+        z-index: 1;
+        width: 100%;
+        object-fit: contain; }
+    .rentuacar__portfolio_wrapper .rent__tasks .title__part {
+      padding-left: 60px;
+      min-width: 50%;
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .rentuacar__portfolio_wrapper .rent__tasks .title__part .section__header {
+        max-width: 575px; }
+      .rentuacar__portfolio_wrapper .rent__tasks .title__part .rent__text {
+        max-width: 575px; }
 
 /*# sourceMappingURL=style.css.map */
