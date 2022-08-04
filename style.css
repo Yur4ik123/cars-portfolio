@@ -74,13 +74,14 @@
   font: 400 18px/27px "Proxima Nova", sans-serif;
   background-color: #1E1F24;
   color: #EAEAED;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 1;
   max-width: 1920px;
   margin: 0 auto;
   padding-bottom: 170px; }
   .rentuacar__portfolio_wrapper img {
-    object-fit: contain; }
+    object-fit: contain;
+    height: auto; }
   .rentuacar__portfolio_wrapper .rent__text p {
     margin-bottom: 30px; }
   .rentuacar__portfolio_wrapper .rent__text ul {
@@ -176,6 +177,7 @@
         position: absolute;
         left: 0;
         top: 0;
+        width: initial;
         transform: translate(-35%, -35%);
         z-index: -1; }
       .rentuacar__portfolio_wrapper .rent__about_proj .img__part img {
@@ -209,7 +211,8 @@
         position: absolute;
         left: -60px;
         top: -180px;
-        z-index: -1; }
+        z-index: -1;
+        width: initial; }
       .rentuacar__portfolio_wrapper .rent__tasks .img__part img {
         z-index: 1;
         width: 100%;
@@ -389,7 +392,8 @@
       .rentuacar__portfolio_wrapper .rent__mobile .container .mob__ellipse {
         position: absolute;
         bottom: 0;
-        right: -350px; }
+        right: -350px;
+        z-index: -1; }
     .rentuacar__portfolio_wrapper .rent__mobile .union {
       position: absolute;
       top: -40px;
@@ -478,5 +482,307 @@
         text-transform: uppercase; }
         .rentuacar__portfolio_wrapper .rent__tech .tech__wrapper .tech__items .col div:first-child {
           margin-bottom: 27px; }
+
+@media (max-width: 1350px) {
+  .rentuacar__portfolio_wrapper .rent__head_block .head__content .img__part {
+    min-width: 45vw;
+    flex-basis: 45vw; }
+  .rentuacar__portfolio_wrapper .rent__head_block .head__content .title__part .rent__header {
+    font-size: 54px;
+    line-height: 64px;
+    max-width: 450px; }
+  .rentuacar__portfolio_wrapper .rent__head_block .head__content .title__part .rent__head_text {
+    max-width: 450px; }
+  .rentuacar__portfolio_wrapper .rent__tasks .title__part {
+    padding-left: 20px; }
+  .rentuacar__portfolio_wrapper .rent__tasks .img__part {
+    padding-right: 20px; }
+  .rentuacar__portfolio_wrapper .rent__fonts .cols__wrapper .col__second {
+    padding-left: 20px; }
+  .rentuacar__portfolio_wrapper .rent__catalog .image__wrapper {
+    margin-top: -30px;
+    margin-left: -140px; }
+  .rentuacar__portfolio_wrapper .rent__mobile .first__row {
+    grid-template-columns: 0.8fr 1fr;
+    margin-bottom: 60px; } }
+@media (max-width: 992px) {
+  .rentuacar__portfolio_wrapper .rent__head_block {
+    background: url("./img/head_mob_backgr.png") no-repeat 0/contain;
+    background-position-y: 0;
+    background-size: contain;
+    margin-bottom: 150px; }
+    .rentuacar__portfolio_wrapper .rent__head_block .ellipse {
+      left: 65%; }
+    .rentuacar__portfolio_wrapper .rent__head_block .union {
+      top: 55%;
+      bottom: initial; }
+    .rentuacar__portfolio_wrapper .rent__head_block .head__top {
+      padding: 40px 0; }
+    .rentuacar__portfolio_wrapper .rent__head_block .head__content .row__wrapper {
+      flex-direction: column; }
+    .rentuacar__portfolio_wrapper .rent__head_block .head__content .img__part {
+      flex-basis: initial;
+      min-width: initial;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 38px; }
+      .rentuacar__portfolio_wrapper .rent__head_block .head__content .img__part img {
+        width: 70%; }
+    .rentuacar__portfolio_wrapper .rent__head_block .head__content .title__part {
+      flex-basis: initial;
+      min-width: initial;
+      padding-left: 0; }
+      .rentuacar__portfolio_wrapper .rent__head_block .head__content .title__part .rent__header {
+        font-size: 60px;
+        line-height: 80px;
+        max-width: initial;
+        margin-bottom: 30px; }
+      .rentuacar__portfolio_wrapper .rent__head_block .head__content .title__part .rent__head_text {
+        max-width: initial; }
+  .rentuacar__portfolio_wrapper .rent__about_proj {
+    margin-bottom: 230px; }
+    .rentuacar__portfolio_wrapper .rent__about_proj .ellipse {
+      display: none; }
+    .rentuacar__portfolio_wrapper .rent__about_proj .row__wrapper {
+      flex-direction: column-reverse; }
+      .rentuacar__portfolio_wrapper .rent__about_proj .row__wrapper .img__part {
+        width: 90%;
+        margin: 0 auto 30px; }
+        .rentuacar__portfolio_wrapper .rent__about_proj .row__wrapper .img__part picture {
+          display: flex;
+          justify-content: center; }
+        .rentuacar__portfolio_wrapper .rent__about_proj .row__wrapper .img__part .about_el {
+          transform: translate(-8%, -35%);
+          width: 250px;
+          height: 250px; }
+      .rentuacar__portfolio_wrapper .rent__about_proj .row__wrapper .title__wrapper .title__part .section__header {
+        max-width: initial; }
+      .rentuacar__portfolio_wrapper .rent__about_proj .row__wrapper .title__wrapper .title__part .rent__text {
+        max-width: initial; }
+  .rentuacar__portfolio_wrapper .rent__tasks {
+    margin-bottom: 80px; }
+    .rentuacar__portfolio_wrapper .rent__tasks .row__wrapper {
+      flex-direction: column; }
+      .rentuacar__portfolio_wrapper .rent__tasks .row__wrapper .img__part {
+        margin-bottom: 69px;
+        padding-right: 0;
+        justify-content: center; }
+        .rentuacar__portfolio_wrapper .rent__tasks .row__wrapper .img__part .about_el {
+          left: 45px; }
+      .rentuacar__portfolio_wrapper .rent__tasks .row__wrapper .title__part {
+        padding-left: 0; }
+        .rentuacar__portfolio_wrapper .rent__tasks .row__wrapper .title__part .section__header {
+          max-width: initial; }
+        .rentuacar__portfolio_wrapper .rent__tasks .row__wrapper .title__part .rent__text {
+          max-width: initial; }
+  .rentuacar__portfolio_wrapper .rent__fonts {
+    margin-bottom: 120px; }
+    .rentuacar__portfolio_wrapper .rent__fonts .ellipse {
+      display: none; }
+    .rentuacar__portfolio_wrapper .rent__fonts .union {
+      top: 67%;
+      right: 30%; }
+    .rentuacar__portfolio_wrapper .rent__fonts .font__ellipse {
+      right: 0;
+      top: -70px; }
+    .rentuacar__portfolio_wrapper .rent__fonts .cols__wrapper {
+      grid-template-columns: 1fr;
+      grid-gap: 60px; }
+      .rentuacar__portfolio_wrapper .rent__fonts .cols__wrapper .col__second {
+        padding-left: 0; }
+      .rentuacar__portfolio_wrapper .rent__fonts .cols__wrapper .colors__wrapper {
+        max-width: 630px; }
+  .rentuacar__portfolio_wrapper .rent__main_page .images__wrapper .image:first-child {
+    margin-right: 0; }
+  .rentuacar__portfolio_wrapper .rent__main_page .images__wrapper .image:last-child {
+    margin-left: 0; }
+  .rentuacar__portfolio_wrapper .rent__main_page .images__wrapper .image .img__abs {
+    left: -60px; }
+  .rentuacar__portfolio_wrapper .rent__catalog .union {
+    display: none; }
+  .rentuacar__portfolio_wrapper .rent__catalog .ellipse {
+    display: none; }
+  .rentuacar__portfolio_wrapper .rent__catalog .section__header {
+    margin-bottom: 30px; }
+  .rentuacar__portfolio_wrapper .rent__catalog .image__wrapper {
+    margin-top: 0;
+    margin-left: -96px; }
+  .rentuacar__portfolio_wrapper .rent__checkout .container .ellipse {
+    display: none; }
+  .rentuacar__portfolio_wrapper .rent__mobile {
+    margin-top: -30px;
+    padding-top: 80px;
+    background: url("./img/mobile_mob_bakgr.png") no-repeat 0/contain;
+    background-position-y: 0; }
+    .rentuacar__portfolio_wrapper .rent__mobile .container .mob__ellipse {
+      right: -50%;
+      z-index: -1; }
+    .rentuacar__portfolio_wrapper .rent__mobile .container .ellipse {
+      display: none; }
+    .rentuacar__portfolio_wrapper .rent__mobile .container .union {
+      display: none; }
+    .rentuacar__portfolio_wrapper .rent__mobile .first__row {
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: initial;
+      grid-gap: initial; }
+      .rentuacar__portfolio_wrapper .rent__mobile .first__row .image__col {
+        margin-bottom: 50px; }
+      .rentuacar__portfolio_wrapper .rent__mobile .first__row .title__col {
+        max-width: initial; }
+    .rentuacar__portfolio_wrapper .rent__mobile .second__row {
+      grid-gap: 40px; }
+      .rentuacar__portfolio_wrapper .rent__mobile .second__row .col {
+        grid-gap: 40px; }
+  .rentuacar__portfolio_wrapper .rent__result {
+    margin-bottom: 80px; }
+    .rentuacar__portfolio_wrapper .rent__result .container .result__ellipse {
+      top: -80px; }
+    .rentuacar__portfolio_wrapper .rent__result .result__wrapper {
+      padding: 50px; }
+      .rentuacar__portfolio_wrapper .rent__result .result__wrapper .ellipse {
+        display: none; }
+      .rentuacar__portfolio_wrapper .rent__result .result__wrapper .results__list li {
+        margin-bottom: 20px; }
+  .rentuacar__portfolio_wrapper .rent__tech .container .union {
+    display: none; }
+  .rentuacar__portfolio_wrapper .rent__tech .tech__wrapper {
+    grid-template-columns: 1fr; }
+    .rentuacar__portfolio_wrapper .rent__tech .tech__wrapper .tech__items {
+      padding-top: 0; } }
+@media (max-width: 768px) {
+  .rentuacar__portfolio_wrapper .section__header {
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 44px; }
+  .rentuacar__portfolio_wrapper .rent__head_block {
+    padding-top: 50px;
+    margin-bottom: 70px;
+    background-position-y: 30px; }
+    .rentuacar__portfolio_wrapper .rent__head_block .ellipse, .rentuacar__portfolio_wrapper .rent__head_block .union, .rentuacar__portfolio_wrapper .rent__head_block .head__top {
+      display: none; }
+    .rentuacar__portfolio_wrapper .rent__head_block .head__content .img__part {
+      margin-bottom: 20px; }
+      .rentuacar__portfolio_wrapper .rent__head_block .head__content .img__part img {
+        width: 100%; }
+    .rentuacar__portfolio_wrapper .rent__head_block .head__content .title__part .rent__header {
+      font-size: 38px;
+      line-height: 54px;
+      margin-bottom: 20px; }
+  .rentuacar__portfolio_wrapper .rent__about_proj {
+    margin-bottom: 100px; }
+    .rentuacar__portfolio_wrapper .rent__about_proj .row__wrapper .img__part {
+      width: 100%; }
+      .rentuacar__portfolio_wrapper .rent__about_proj .row__wrapper .img__part .about_el {
+        display: none; }
+  .rentuacar__portfolio_wrapper .rent__tasks {
+    margin-bottom: 60px; }
+    .rentuacar__portfolio_wrapper .rent__tasks .row__wrapper .img__part .about_el {
+      width: 283px;
+      height: 283px;
+      left: -15px;
+      top: -70px; }
+  .rentuacar__portfolio_wrapper .rent__fonts {
+    margin-bottom: 60px; }
+    .rentuacar__portfolio_wrapper .rent__fonts .union {
+      display: none; }
+    .rentuacar__portfolio_wrapper .rent__fonts .font__ellipse {
+      right: -50%;
+      top: 50px; }
+    .rentuacar__portfolio_wrapper .rent__fonts .section__header {
+      margin-bottom: 44px; }
+    .rentuacar__portfolio_wrapper .rent__fonts .cols__wrapper {
+      grid-gap: 50px; }
+      .rentuacar__portfolio_wrapper .rent__fonts .cols__wrapper .col__header {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 40px; }
+      .rentuacar__portfolio_wrapper .rent__fonts .cols__wrapper .colors__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px 0; }
+        .rentuacar__portfolio_wrapper .rent__fonts .cols__wrapper .colors__wrapper .color__item .color__image {
+          margin-bottom: 32px; }
+          .rentuacar__portfolio_wrapper .rent__fonts .cols__wrapper .colors__wrapper .color__item .color__image img {
+            width: 92px;
+            height: 67px; }
+        .rentuacar__portfolio_wrapper .rent__fonts .cols__wrapper .colors__wrapper .color__item .color__title {
+          font-size: 20px;
+          line-height: 24px; }
+      .rentuacar__portfolio_wrapper .rent__fonts .cols__wrapper .col__second .font__family {
+        font-size: 80px;
+        line-height: 94px;
+        margin-bottom: 6px; }
+      .rentuacar__portfolio_wrapper .rent__fonts .cols__wrapper .col__second .font__alphabet {
+        font-size: 22px;
+        line-height: 38px;
+        max-width: 268px; }
+  .rentuacar__portfolio_wrapper .rent__main_page {
+    margin-bottom: 180px; }
+    .rentuacar__portfolio_wrapper .rent__main_page .main__ellipse {
+      bottom: -130px;
+      right: 0; }
+    .rentuacar__portfolio_wrapper .rent__main_page .union {
+      display: none; }
+    .rentuacar__portfolio_wrapper .rent__main_page .section__header {
+      margin-bottom: 48px; }
+    .rentuacar__portfolio_wrapper .rent__main_page .images__wrapper {
+      flex-direction: column; }
+      .rentuacar__portfolio_wrapper .rent__main_page .images__wrapper .image {
+        display: flex;
+        justify-content: center; }
+        .rentuacar__portfolio_wrapper .rent__main_page .images__wrapper .image .img__abs {
+          left: 0;
+          right: 0;
+          bottom: -80px; }
+  .rentuacar__portfolio_wrapper .rent__catalog {
+    margin-bottom: 130px; }
+  .rentuacar__portfolio_wrapper .rent__checkout {
+    margin-bottom: 40px; }
+    .rentuacar__portfolio_wrapper .rent__checkout .container {
+      align-items: flex-start; }
+    .rentuacar__portfolio_wrapper .rent__checkout .checkout__ellipse {
+      display: none; }
+    .rentuacar__portfolio_wrapper .rent__checkout .section__header {
+      max-width: 255px;
+      text-align: left; }
+    .rentuacar__portfolio_wrapper .rent__checkout .section__subheader {
+      text-align: left;
+      margin-bottom: 50px; }
+  .rentuacar__portfolio_wrapper .rent__info_pages .section__header {
+    text-align: left;
+    margin-bottom: 44px; }
+  .rentuacar__portfolio_wrapper .rent__mobile {
+    margin-bottom: 90px; }
+    .rentuacar__portfolio_wrapper .rent__mobile .second__row {
+      margin-bottom: 50px;
+      grid-template-columns: 1fr;
+      grid-gap: 50px; }
+      .rentuacar__portfolio_wrapper .rent__mobile .second__row .img__wrapper {
+        justify-self: center; }
+      .rentuacar__portfolio_wrapper .rent__mobile .second__row .first__col {
+        padding-top: 0; }
+    .rentuacar__portfolio_wrapper .rent__mobile .third__col {
+      margin: 0 -30px; }
+  .rentuacar__portfolio_wrapper .rent__result .container .result__ellipse {
+    top: initial;
+    left: -50%;
+    bottom: -50%; }
+  .rentuacar__portfolio_wrapper .rent__result .result__wrapper .section__header {
+    margin-bottom: 25px; }
+  .rentuacar__portfolio_wrapper .rent__result .result__wrapper .results__list {
+    grid-template-columns: 1fr;
+    grid-gap: 0; }
+  .rentuacar__portfolio_wrapper .rent__tech .tech__wrapper {
+    grid-template-columns: 1fr; }
+    .rentuacar__portfolio_wrapper .rent__tech .tech__wrapper .tech__items {
+      grid-template-columns: 1fr;
+      grid-gap: 28px; }
+      .rentuacar__portfolio_wrapper .rent__tech .tech__wrapper .tech__items .col div:first-child {
+        margin-bottom: 12px; } }
+@media (max-width: 576px) {
+  .rentuacar__portfolio_wrapper .rent__catalog .image__wrapper {
+    margin-top: 0;
+    margin-left: -71px; } }
 
 /*# sourceMappingURL=style.css.map */
