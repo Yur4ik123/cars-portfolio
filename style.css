@@ -91,7 +91,8 @@
     .rentuacar__portfolio_wrapper .rent__text ul:last-child {
       margin-bottom: 0; }
     .rentuacar__portfolio_wrapper .rent__text ul li {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      padding-left: 10px; }
       .rentuacar__portfolio_wrapper .rent__text ul li:last-child {
         margin-bottom: 0; }
   .rentuacar__portfolio_wrapper .section__header {
